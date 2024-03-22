@@ -220,6 +220,56 @@ export default {
       createTime: 1659344075524,
       granted: true,
     },
+
+    {
+      id: '1-3-5',
+      parentId: '1-3',
+      path: 'T4zX-b4q8-8ZFx',
+      sortIndex: 4,
+      level: 3,
+      name: '历史数据',
+      code: 'device/Category',
+      icon: 'icon-chanpinfenlei1',
+      url: '/iot/device/HistryData',
+      buttons: [
+        { id: 'view', name: '查看', enabled: true, granted: true },
+        {
+          id: 'delete',
+          name: '删除',
+          enabled: true,
+          granted: true,
+        },
+        { id: 'update', name: '编辑', enabled: true, granted: true },
+        {
+          id: 'add',
+          name: '新增',
+          enabled: true,
+          granted: true,
+        },
+      ],
+      assetAccesses: [{
+        supportId: 'ignore',
+        name: '全部数据',
+        enabled: false,
+        granted: false,
+      },
+        { supportId: 'creator', name: '自己创建的', enabled: true, granted: true },
+        {
+          supportId: 'org',
+          name: '所在组织',
+          enabled: false,
+          granted: false,
+        },
+        {
+          supportId: 'org-include-children',
+          name: '所在组织及下级组织',
+          enabled: false,
+          granted: false,
+        },],
+      options: { switch: true },
+      createTime: 1659344075524,
+      granted: true,
+    },
   ],
   [ROLEKEYS.link]: [
     {

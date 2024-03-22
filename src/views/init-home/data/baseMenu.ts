@@ -862,6 +862,63 @@ export default [
               },
             ],
           },
+          {
+            code: 'device/HistryData',
+            name: '历史数据展示',
+            owner: 'iot',
+            //parentId: '1-3',
+            id: 'bc83f18659982abb9ac1a96362fc3272',
+            sortIndex: 4,
+            url: '/iot/device/HistryData',
+            icon: 'icon-chanpinfenlei',
+            accessSupport: { text: "支持", value: "support" },
+            supportDataAccess: true,
+            assetType: 'deviceCategory',
+            showPage: ['device-category'],
+            permissions: [],
+            buttons: [
+              {
+                id: 'view',
+                name: '查看',
+                permissions: [
+                  {
+                    permission: 'device-category',
+                    actions: ['query'],
+                  },
+                ],
+              },
+              {
+                id: 'delete',
+                name: '删除',
+                permissions: [
+                  {
+                    permission: 'device-category',
+                    actions: ['query', 'delete'],
+                  },
+                ],
+              },
+              {
+                id: 'update',
+                name: '编辑',
+                permissions: [
+                  {
+                    permission: 'device-category',
+                    actions: ['query', 'save'],
+                  },
+                ],
+              },
+              {
+                id: 'add',
+                name: '新增',
+                permissions: [
+                  {
+                    permission: 'device-category',
+                    actions: ['query', 'save'],
+                  },
+                ],
+              },
+            ],
+          },
         ],
       },
       {

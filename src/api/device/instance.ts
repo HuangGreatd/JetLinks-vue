@@ -3,6 +3,15 @@ import server from '@/utils/request'
 import { BASE_API_PATH, TOKEN_KEY } from '@/utils/variable'
 import { DeviceInstance } from '@/views/device/Instance/typings'
 import { DeviceMetadata, UnitType } from '@/views/device/Product/typings';
+import { DeviceQueryData } from '@/views/device/HistryData/typings';
+
+/**
+ * 查询参数历史数据
+ * @param productId
+ * @param data
+ */
+export const getHistryData = (productId: string,data: DeviceQueryData) => server.post(`/device-instance/${productId}/histry_data`,data);
+
 
 /**
  * 重置设备继承产品的物模型规则

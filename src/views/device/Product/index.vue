@@ -260,6 +260,8 @@ const columns = [
         ellipsis: true,
     },
 ];
+
+
 const permission = usePermissionStore().hasPermission(
     `device/Product:import`,
 );
